@@ -14,11 +14,17 @@
       font: inherit;
       vertical-align: baseline;
     }
+    html{
+      height: 100%;
+      position:relative;
+    }
 
     body {
       background-color: #555555;
       font-family: 'Lato', sans-serif;
-      color: azure;
+      padding-bottom: 10px;
+      position: relative;
+
     }
 
     #header-bar h1 {
@@ -29,6 +35,7 @@
       font-style: italic;
       text-align: center;
       display: block;
+      color: azure;
     }
 
     .square .image {
@@ -66,7 +73,7 @@
 
 
     .square:hover .overlay {
-        opacity:0.9;
+        opacity:0.7;
     }
 
     .overlay {
@@ -79,41 +86,26 @@
         background-color: #dddddd;
         transition: .5s ease;
         width: 100%;
-        height: 100%;
+        /*height: 100%;*/
+        padding:40% 0;/* vertical value as  100% equals width */
+        display:inline-block;
+        vertical-align:middle;
+        text-align: center;
+
     }
 
-    .overlay, .image {
-      border-radius: 10px;
-    }
-
-    /*#navbar {
-      background-color: #dddddd;
-      padding-top: 1%;
-      padding-bottom: 4%;
+    p {
+      display: : inline-block;
       color: #555555;
     }
 
-    ul {
-      list-style-type: none;
-      font-size: 150%;
-      float:right;
+
+    .overlay, .image {
+      border-radius: 8px;
     }
 
-    li {
-      display: inline-block;
-    }
-    #navbar a {
-      text-decoration: none;
-      text-align: center;
-      padding-left: 1em;
-      padding-right: 1em;
-
-
-
-    }
-*/
     #navbar li:hover {
-      background-color: green;
+      background-color: azure;
 
     }
 
@@ -121,16 +113,36 @@
     width:100%;
     float: right;
     margin: 0 0 3em 0;
-	  padding: 0;
     background-color: #dddddd;
     }
 
   #navbar li {
     float: right;
-    padding: 8px;
-    /*background-color: #dddddd;*/
+    padding:1em;
     list-style: none;
+    text-decoration: none;
+  }
+  a { text-decoration: none;}
+  a:visited { text-decoration: none; color: #555555; }
+  a:hover { text-decoration: none; color:#555555;; }
+  a:focus { text-decoration: none; color:#555555;; }
+  a:hover, a:active { text-decoration: none; color:#555555; }
 
+  #footer-top {
+    color: transparent;
+  }
+
+  #footer {
+    position: absolute;
+
+    width: 100%;
+    padding: 0.5em;
+    background-color: #dddddd;
+    display: block;
+    color: #555555;
+    text-align: center;
+    /*Extends the footer*/
+    box-shadow: 0px 500px 0px 500px #dddddd;
   }
 
   </style>
@@ -140,9 +152,9 @@
 
   <div id="navbar">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Home</a></li>
     </ul>
   </div>
 
@@ -154,49 +166,51 @@
     <div class="square">
       <div class="image" id="red">
         <div class="overlay">
-        Red
+        <p>Here is some text about this image. It doesn't say very much</p>
         </div>
       </div>
     </div>
     <div class="square">
       <div class="image" id="blue">
         <div class="overlay">
-        Blue
+        <p>Blue</p>
         </div>
       </div>
     </div>
     <div class="square">
       <div class="image" id="orange">
         <div class="overlay">
-        Orange
+        <p>Orange</p>
         </div>
       </div>
     </div>
     <div class="square">
       <div class="image" id="green">
         <div class="overlay">
-        Green
+        <p>Green</p>
         </div>
       </div>
     </div>
     <div class="square">
       <div class="image" id="purple">
         <div class="overlay">
-        Purple
+        <p>Purple</p>
         </div>
       </div>
     </div>
     <div class="square">
       <div class="image" id="yellow">
         <div class="overlay">
-        Yellow
+        <p>Yellow</p>
         </div>
       </div>
     </div>
 
   </div>
-  <div id="footer">
-    <h3>Footer Bar</h3>
-  </div>
+
 </body>
+<div id="footer-top">Hack!</div>
+<div id="footer">
+  <p>&copy; 2017 Footer stuff</p>
+</div>
 </html>
