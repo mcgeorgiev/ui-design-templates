@@ -21,10 +21,14 @@
       color: azure;
     }
 
+    #header-bar h1 {
+      margin-top: 0px;
+    }
     h1 {
       font-size: 5em;
       font-style: italic;
       text-align: center;
+      display: block;
     }
 
     .square .image {
@@ -82,7 +86,7 @@
       border-radius: 10px;
     }
 
-    #navbar {
+    /*#navbar {
       background-color: #dddddd;
       padding-top: 1%;
       padding-bottom: 4%;
@@ -105,11 +109,29 @@
       padding-right: 1em;
 
 
+
+    }
+*/
+    #navbar li:hover {
+      background-color: green;
+
     }
 
-    #navbar a:hover {
-      background-color: green;
+    #navbar {
+    width:100%;
+    float: right;
+    margin: 0 0 3em 0;
+	  padding: 0;
+    background-color: #dddddd;
     }
+
+  #navbar li {
+    float: right;
+    padding: 8px;
+    /*background-color: #dddddd;*/
+    list-style: none;
+
+  }
 
   </style>
 </head>
