@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <style>
+
+  html, body, div, ul, li{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  body {
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+  }
+
+  h1 {
+    font-size: 5em;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    color: darkgray;
+  }
+
+  #container {
+    max-width: 960px;
+    margin: 0 auto;
+    /*background-color: azure;*/
+  }
+
+  .square .image {
+    position: relative;
+    display: block;
+    float: left;
+    width: 30%;
+    height: 0;
+    padding-bottom: 30%;
+  }
+  .image {
+    margin: 1.66%;
+  }
+
+  #red {
+    background-color: palevioletred;
+  }
+  #blue {
+    background-color: dodgerblue;
+  }
+  #orange {
+    background-color: salmon;
+  }
+  #green {
+    background-color: mediumspringgreen;
+  }
+  #purple {
+    background-color: mediumpurple;
+  }
+  #yellow {
+    background-color: khaki;
+  }
+
+
+  .square:hover .overlay {
+      opacity:0.7;
+  }
+
+  .overlay {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      opacity: 0;
+      background-color: #dddddd;
+      transition: .5s ease;
+      width: 100%;
+      padding:40% 0;
+      display:inline-block;
+      vertical-align:middle;
+      text-align: center;
+
+  }
+
+  p {
+    display: : inline-block;
+    color: #555555;
+  }
+
+
+  .overlay, .image {
+    border-radius: 8px;
+  }
+
+  a { text-decoration: none;}
+  a:visited { text-decoration: none; color: #555555; }
+  a:hover { text-decoration: none; color:#555555;; }
+  a:focus { text-decoration: none; color:#555555;; }
+  a:hover, a:active { text-decoration: none; color:#555555; }
+
+  #navbar {
+    width: 100%;
+    margin: 0 0 1em 0;
+    padding: 0;
+    background-color: #f2f2f2;
+   }
+
+  ul {
+    width: 960px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+      float: right;
+  }
+
+  li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  li a:hover {
+      background-color: #dddddd;
+  }
+
+  </style>
+</head>
+
+<body>
+
+  <div id="navbar">
+    <ul>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Home</a></li>
+    </ul>
+  </div>
+
+  <div id="container">
+
+    <div id="header-bar">
+      <h1>YOUR NAME</h1>
+    </div>
+
+    <div id="tiles">
+      <div class="square">
+        <div class="image" id="red">
+          <div class="overlay">
+          <p>Here is some text about this image. It doesn't say very much</p>
+          </div>
+        </div>
+      </div>
+      <div class="square">
+        <div class="image" id="blue">
+          <div class="overlay">
+          <p>Blue</p>
+          </div>
+        </div>
+      </div>
+      <div class="square">
+        <div class="image" id="orange">
+          <div class="overlay">
+          <p>Orange</p>
+          </div>
+        </div>
+      </div>
+      <div class="square">
+        <div class="image" id="green">
+          <div class="overlay">
+          <p>Green</p>
+          </div>
+        </div>
+      </div>
+      <div class="square">
+        <div class="image" id="purple">
+          <div class="overlay">
+          <p>Purple</p>
+          </div>
+        </div>
+      </div>
+      <div class="square">
+        <div class="image" id="yellow">
+          <div class="overlay">
+          <p>Yellow</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
