@@ -18,6 +18,7 @@
 
   body {
     width: 100%;
+    min-height: 100%;
     font-family: 'Lato', sans-serif;
   }
 
@@ -48,7 +49,7 @@
   }
 
   #red {
-    background-color: palevioletred;
+    background-color: crimson;
   }
   #blue {
     background-color: dodgerblue;
@@ -57,13 +58,16 @@
     background-color: salmon;
   }
   #green {
-    background-color: mediumspringgreen;
+    background-color: forestgreen;
   }
   #purple {
     background-color: mediumpurple;
   }
   #yellow {
-    background-color: khaki;
+    background-color: gold;
+  }
+  #brown {
+    background-color: brown;
   }
 
 
@@ -135,6 +139,16 @@
       background-color: #dddddd;
   }
 
+  #footer {
+    border-style: solid;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin: -3em ;
+    text-align: center;
+  }
+
   </style>
 </head>
 
@@ -197,8 +211,20 @@
           </div>
         </div>
       </div>
+      <div class="square">
+        <div class="image" id="brown">
+          <div class="overlay">
+          <p>Brown</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
 </body>
+
+<div id="footer">
+  <p>&copy; 2017 Footer stuff</p>
+</div>
+
 </html>
